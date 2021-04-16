@@ -1,15 +1,12 @@
 <script>
-	import Counter from '$lib/Counter.svelte';
 </script>
 
 <svelte:head>
-	<title>Hello world!</title>
+	<title>History</title>
 </svelte:head>
 
 <main>
-	<h1>Counter game</h1>
-
-	<Counter />
+	<h1>This is the history page</h1>
 </main>
 
 <style>
@@ -29,19 +26,10 @@
 		max-width: 14rem;
 	}
 
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
 	@media (min-width: 480px) {
 		h1 {
 			max-width: none;
 		}
 
-		p {
-			max-width: none;
-		}
 	}
 </style>
