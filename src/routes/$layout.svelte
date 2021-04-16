@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-	<a href=".">Home</a>
+	<a href=".">NotHome</a>
 	<a href="history">History</a>
 </nav>
 
