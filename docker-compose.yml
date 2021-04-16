@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  dashboard:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: dashboard
+    restart: always
+    ports:
+      - 12400:3000
