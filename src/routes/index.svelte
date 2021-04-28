@@ -4,8 +4,6 @@
 	let stockList = ["mel","dej","hej","ko"];
 </script>
 
-<Inventory stocks={stockList} let:stock>
-	<div>
-		{stock}
-	</div>
+<Inventory>
+	
 </Inventory>
