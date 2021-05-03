@@ -9,3 +9,5 @@ services:
     restart: always
     ports:
       - 12400:3000
+    volumes:
+      - ./src/:/usr/app/src/

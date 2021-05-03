@@ -30,6 +30,5 @@
 		h1 {
 			max-width: none;
 		}
-
 	}
 </style>

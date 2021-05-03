@@ -1,7 +1,3 @@
-<script>
-    import IconButton from '@smui/icon-button';
-  </script>
-  
   <style>
       .inventory-st {
       max-width: 360px;
@@ -50,21 +46,21 @@
       .inventory-overlay > p {
       height: 0;
   }
-  
+
   .inventory-overlay > p:first-child {
       margin: 10px auto;
   }
-  
+
   .inventory-overlay > p:last-child {
       margin: 10px auto;
   }
-      
-      
-  
-  
+
+
+
+
   </style>
-  
-  
+
+
   <div class="inventory-st">
       <div class="inventory-top">
           <p>Inventory Status</p>
