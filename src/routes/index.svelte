@@ -1,6 +1,7 @@
 <script>
 	import Inventory from '$lib/Inventory.svelte';
 	import CommandBox from '$lib/CommandBox.svelte';
+	import Runtime from '$lib/Runtime.svelte';
 	import Tile from '$lib/Tile.svelte';
 	import Temperature24 from 'carbon-icons-svelte/lib/Temperature24';
 	import CalculatorCheck24 from 'carbon-icons-svelte/lib/CalculatorCheck24';
@@ -42,6 +43,7 @@
 	</article>
 	<Inventory />
 	<CommandBox />
+	<Runtime />
 </main>
 
 <style>
