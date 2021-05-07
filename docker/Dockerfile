@@ -10,4 +10,4 @@ COPY svelte.config.cjs .
 COPY ./static ./static
 COPY ./src ./src
 RUN yarn build
-ENTRYPOINT ["yarn", "start", "--host"]
+ENTRYPOINT ["yarn", "run", "dev", "--", "--open", "--host"]

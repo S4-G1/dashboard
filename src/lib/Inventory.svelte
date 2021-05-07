@@ -4,8 +4,6 @@
       width: 100%;
       padding: 10px;
       display: block;
-      position: absolute;
-      right: 100px;
   }
       .inventory-top  {
       color: black;

@@ -1,4 +1,6 @@
 <script>
+	import Inventory from '$lib/Inventory.svelte';
+
 	import Tile from '$lib/Tile.svelte';
 	import Temperature24 from 'carbon-icons-svelte/lib/Temperature24';
 	import CalculatorCheck24 from 'carbon-icons-svelte/lib/CalculatorCheck24';
@@ -27,10 +29,6 @@ import Maintenance from '$lib/Maintenance.svelte';
 	];
 </script>
 
-<svelte:head>
-	<title>Bierproductie</title>
-</svelte:head>
-
 <main>
 	<h1>Bieproductie</h1>
 	<article>
@@ -45,7 +43,6 @@ import Maintenance from '$lib/Maintenance.svelte';
 		{/each}
 	</article>
     <Inventory/>
-	<Maintenance/>
 </main>
 
 <style>
