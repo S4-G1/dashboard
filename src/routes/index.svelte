@@ -10,7 +10,8 @@
 	import Checkmark24 from 'carbon-icons-svelte/lib/Checkmark24';
 	import WatsonHealthFusionBlender24 from 'carbon-icons-svelte/lib/WatsonHealthFusionBlender24';
 	import WatsonHealthAiStatusRejected24 from 'carbon-icons-svelte/lib/WatsonHealthAiStatusRejected24';
-import Maintenance from '$lib/Maintenance.svelte';
+	import Maintenance from '$lib/Maintenance.svelte';
+	import Graph from '$lib/graph.svelte';
 	let clicked_tile_index = -1;
 
 	function select_tile(index) {
@@ -43,6 +44,8 @@ import Maintenance from '$lib/Maintenance.svelte';
 		{/each}
 	</article>
     <Inventory/>
+	<Maintenance/>
+	<Graph/>
 </main>
 
 <style>
