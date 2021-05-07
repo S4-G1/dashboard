@@ -6,7 +6,9 @@
 </script>
 
 <div id="wrapper">
-	<h1>Bieproductie</h1>
+    <header>
+        <h1>Bierproductie</h1>
+    </header>
 
 	<nav>
 		<a class:selected={$page.path === '/'} href="/"><Dashboard32 /></a>
@@ -25,18 +27,26 @@
 	}
 	[id='wrapper'] {
 		display: grid;
-		grid-template-columns: 50px auto;
+		grid-template-columns: 64px auto;
 		grid-template-rows: 60px auto;
 		grid-template-areas:
 			'sidebar header'
 			'sidebar main';
 		min-height: 100vh;
+        grid-gap: 15px;
 	}
 
-	[id='wrapper'] h1 {
+	[id='wrapper'] header {
 		display: grid;
 		grid-area: header;
+        border-bottom: 4px solid #388DA6;
+        align-items: center;
 	}
+    [id='wrapper'] header h1 {
+        margin: 0;
+        padding: 0;
+	}
+
 
 	:global(a, a:visited) {
 		color: inherit;
@@ -44,7 +54,7 @@
 
 	nav {
 		display: grid;
-		grid-auto-rows: 50px;
+		grid-auto-rows: 60px;
 		padding-top: 100px;
 		grid-area: sidebar;
 		color: #bdbdbd;
@@ -53,8 +63,6 @@
 
 	nav a {
 		display: grid;
-		place-self: center;
-		border: 2px solid #bdbdbd;
 		font-size: 2em;
 		padding: 1px;
 	}
@@ -62,7 +70,6 @@
 	nav a.selected {
 		background: #388da6;
 		color: #ffffff;
-		border: none;
 	}
 
 	main {
