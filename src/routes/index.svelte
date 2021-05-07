@@ -31,6 +31,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>Overview</title>
+</svelte:head>
+
 <main>
 	<article>
 		{#each tiles as tile, index}
