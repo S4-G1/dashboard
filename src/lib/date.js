@@ -7,9 +7,7 @@ export function format(ms) {
 	s = r;
 	let [minutes, b] = divmod(s, seconds_in_a_minute);
 	s = b;
-	let kek = `${pad(hours)}:${pad(minutes)}:${pad(s)}`;
-	console.log(kek);
-	return kek;
+	return `${pad(hours)}:${pad(minutes)}:${pad(s)}`;
 }
 
 function pad(number, places = 2) {
