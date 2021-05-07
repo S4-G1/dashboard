@@ -1,6 +1,7 @@
 <script>
 	import Inventory from '$lib/Inventory.svelte';
-
+	import CommandBox from '$lib/CommandBox.svelte';
+	import Runtime from '$lib/Runtime.svelte';
 	import Tile from '$lib/Tile.svelte';
 	import Temperature24 from 'carbon-icons-svelte/lib/Temperature24';
 	import CalculatorCheck24 from 'carbon-icons-svelte/lib/CalculatorCheck24';
@@ -31,7 +32,6 @@
 </script>
 
 <main>
-	<h1>Bieproductie</h1>
 	<article>
 		{#each tiles as tile, index}
 			<Tile
@@ -46,6 +46,8 @@
     <Inventory/>
 	<Maintenance/>
 	<Graph/>
+	<CommandBox />
+	<Runtime />
 </main>
 
 <style>

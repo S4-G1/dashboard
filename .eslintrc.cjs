@@ -11,5 +11,14 @@ exports = {
         browser: true,
         es2017: true,
         node: true
-    }
+    },
+    rules: {
+        indent: ["error", 4, { SwitchCase: 1 }],
+        quotes: ["warn", "double"],
+        "sort-imports": "off",
+        "import/first": "error",
+        "import/newline-after-import": "error",
+        "import/no-duplicates": "error",
+        "max-len": ["error", { code: 120 }],
+    },
 };
