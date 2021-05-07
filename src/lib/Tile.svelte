@@ -3,7 +3,6 @@
 	export let value;
 	export let title;
 	export let selected = false;
-	console.log(icon);
 </script>
 
 <main class:selected on:click>
