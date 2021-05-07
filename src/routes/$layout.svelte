@@ -2,15 +2,15 @@
 	import { page } from '$app/stores';
 	import Dashboard32 from 'carbon-icons-svelte/lib/Dashboard32';
 	import Catalog32 from 'carbon-icons-svelte/lib/Catalog32';
-    console.log($page.path);
+	console.log($page.path);
 </script>
 
 <div id="wrapper">
 	<h1>Bieproductie</h1>
 
 	<nav>
-		<a class:selected={$page.path === "/"} href="/"><Dashboard32 /></a>
-		<a class:selected={$page.path === "/history"} href="history"><Catalog32 /></a>
+		<a class:selected={$page.path === '/'} href="/"><Dashboard32 /></a>
+		<a class:selected={$page.path === '/history'} href="history"><Catalog32 /></a>
 	</nav>
 
 	<main>
