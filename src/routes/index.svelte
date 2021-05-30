@@ -49,7 +49,6 @@
 	</article>
     <Inventory/>
 	<Maintenance/>
-	<Graph/>
 	<CommandBox />
 	<Runtime />
 </main>

@@ -1,100 +1,67 @@
+<script>
+    let barley = "0.100KG";
+    let malt = "0.080KG";
+    let hops = "0.080KG";
+    let wheat = "0.080KG";
+    let yeast = "0.080KG";
+</script>
+
 <style>
-      .inventory-st {
-      max-width: 360px;
-      width: 100%;
-      padding: 10px;
-      display: block;
-      position:relative;
-      top: 50px; left: 71%;
-  }
-      .inventory-top  {
-      color: black;
-      display: flex;
-      justify-content: center;
-      margin-bottom: 10px;
-  }
-      .inventory-container {
-      color:black;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-  }
-      .inventory-inner {
-      color:black;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      padding-bottom: 10px;
-  }
-      .inventory-inner > div {
-  }
-      .inventory-inner > div:first-child {
-      background-color: lightgreen;
-      width: 50%;
-      height: 50px;
-  }
-      .inventory-inner > div:nth-child(2n) {
-      background-color: lightgrey;
-      width: 50%;
-  }
-      .inventory-overlay {
-      position: relative;
-      width: 100%;
-      top: -50px;
-      display: flex;
-      margin: 0px;
-      color: black;
-  }
-      .inventory-overlay > p {
-      height: 0;
-  }
+    main {
+        display: grid;
+        grid-template-rows: 30px 1fr;
+        place-items: center;
+        background: #C4C4C4;
+        grid-gap: 10px;
+    }
+    span {
+        text-transform: uppercase;
+    }
+
+    main article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        grid-template-rows: repeat(5, 1fr);
+    }
+
+    main article div {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main article div span.name {
+        background: #0AAE41;
+    }
 </style>
 
+<main>
+    <span>Inventory Status</span>
+    <article>
+        <div>
+            <span class="name">Barley</span>
+            <span>{barley}</span>
+        </div>
 
-<div class="inventory-st">
-	<div class="inventory-top">
-		<p>Inventory Status</p>
-	</div>
-	<div class="inventory-container">
-		<div class="BARLEY inventory-inner" id="BARLEY-bar">
-			<div class="inventory-inner > div:first-child" />
-			<div class="inventory-inner > div:nth-child(2n)" />
-			<div class="BARLEY inventory-overlay" id="BARLEY-value">
-				<p>BARLEY</p>
-				<p>0.100kg</p>
-			</div>
-		</div>
-		<div class="MALT inventory-inner" id="MALT-bar">
-			<div class="inventory-inner > div:first-child" />
-			<div class="inventory-inner > div:nth-child(2n)" />
-			<div class="MALT inventory-overlay" id="MALT-value">
-				<p>MALT</p>
-				<p>0.100kg</p>
-			</div>
-		</div>
-		<div class="HOPS inventory-inner" id="HOPS-bar">
-			<div class="inventory-inner > div:first-child" />
-			<div class="inventory-inner > div:nth-child(2n)" />
-			<div class="HOPS inventory-overlay" id="HOPS-value">
-				<p>HOPS</p>
-				<p>0.100kg</p>
-			</div>
-		</div>
-		<div class="WHEAT inventory-inner" id="WHEAT-bar">
-			<div class="inventory-inner > div:first-child" />
-			<div class="inventory-inner > div:nth-child(2n)" />
-			<div class="WHEAT inventory-overlay" id="WHEAT-value">
-				<p>WHEAT</p>
-				<p>0.100kg</p>
-			</div>
-		</div>
-		<div class="YEAST inventory-inner" id="YEAST-bar">
-			<div class="inventory-inner > div:first-child" />
-			<div class="inventory-inner > div:nth-child(2n)" />
-			<div class="YEAST inventory-overlay" id="YEAST-value">
-				<p>YEAST</p>
-				<p>0.100kg</p>
-			</div>
-		</div>
-	</div>
-</div>
+        <div>
+            <span class="name">Malt</span>
+            <span>{malt}</span>
+        </div>
+
+        <div>
+            <span class="name">Hops</span>
+            <span>{hops}</span>
+        </div>
+
+        <div>
+            <span class="name">Wheat</span>
+            <span>{wheat}</span>
+
+        </div>
+        <div>
+            <span class="name">Yeast</span>
+            <span>{yeast}</span>
+        </div>
+    </article>
+</main>
