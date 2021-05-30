@@ -2,14 +2,10 @@
 	import { page } from '$app/stores';
 	import Dashboard32 from 'carbon-icons-svelte/lib/Dashboard32';
 	import Catalog32 from 'carbon-icons-svelte/lib/Catalog32';
-	console.log($page.path);
 </script>
 
 <div id="wrapper">
-    <header>
-        <h1>Bierproductie</h1>
-    </header>
-
+	<h1>S4G1</h1>
 	<nav>
 		<a class:selected={$page.path === '/'} href="/"><Dashboard32 /></a>
 		<a class:selected={$page.path === '/history'} href="history"><Catalog32 /></a>
@@ -42,9 +38,9 @@
         border-bottom: 4px solid #388DA6;
         align-items: center;
 	}
-    [id='wrapper'] header h1 {
-        margin: 0;
-        padding: 0;
+        [id='wrapper'] header h1 {
+                margin: 0;
+                padding: 0;
 	}
 
 

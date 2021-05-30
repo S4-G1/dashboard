@@ -1,9 +1,9 @@
 <script>
-    let barley = "0.100KG";
-    let malt = "0.080KG";
-    let hops = "0.080KG";
-    let wheat = "0.080KG";
-    let yeast = "0.080KG";
+    export let barley = "0.100KG";
+    export let malt = "0.080KG";
+    export let hops = "0.080KG";
+    export let wheat = "0.080KG";
+    export let yeast = "0.080KG";
 </script>
 
 <style>

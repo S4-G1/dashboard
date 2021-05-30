@@ -29,6 +29,7 @@
 		{ title: 'Products per minute', value: 189, icon: CalculatorCheck24 },
 		{ title: 'Rejected products', value: 7, icon: WatsonHealthAiStatusRejected24 }
 	];
+        const ingredients = []
 </script>
 
 <svelte:head>
@@ -47,7 +48,7 @@
 			/>
 		{/each}
 	</article>
-    <Inventory/>
+        <Inventory/>
 	<Maintenance/>
 	<CommandBox />
 	<Runtime />
